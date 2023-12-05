@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    font-family: "Open Sans";
+}
+
+.head {
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.header {
+    background-color: #f4e9D7;
+    display: inline-block;
+    width: 90%;
+    border-radius: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header h3 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.headerProfile {
+    display: inline-block;
+    float: inline-end;
+    margin: 0 auto;
+    padding-right: 10px;
+}
+
+.headerProfile img {
+    border-radius: 50%;
+}
+
+nav {
+    display: inline-block;
+}
+
+nav ul {
+    list-style: none;
+    display: inline;
+}
+
+nav li {
+    display: inline;
+    padding-right: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: grey;
+}
+
+.image-button {
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+.pic_row_1 {
+    padding: 10px;
+    display: flex;
+    width: 1400px;
+}
+
+.text {
+    width: 1100px;
+    display: flex;
+}
+
+.text_1 {
+    width: 300px;
+    height: 50px;
+    margin-left: 15px;
+    text-align: center;
+}
+
+.list {
+    height: 10px;
+    width: 300px;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.frame {
+    display: flex;
+    background-color: #f4e9D7;
+    height: 80px;
+    width: 1300px;
+    border-radius: 500px;
+}
+
+.pfp {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 1100px;
+}
+
+.pic {
+    width: 350px;
+    height: 350px;
+    border-radius: 20%;
+    border: 5px solid #f4e9D7;
+    display: inline-block;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.post {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.post h6 {
+    display: block;
+}
+
+.button {
+    display: inline-block;
+    cursor: pointer;
+
+    background-color: black;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50px;
+}

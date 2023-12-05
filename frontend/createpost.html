@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StuDonate</title>
+    <link rel="icon" type="images/x-icon" href="images/logo.png" />
+    <link rel="stylesheet" href="createpost.css" />
+  </head>
+  <body>
+    <div class="head">
+      <div class="header">
+        <img
+          class="logo"
+          src="images/logo.png"
+          style="width: 50px; height: 50px; object-fit: cover"
+        />
+        <h3>StuDonate</h3>
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="createpost.html">Create Post</a>
+            </li>
+            <li>
+              <a href="myaccount.html">Account</a>
+            </li>
+            <li>
+              <a href="pending.html">Your Donations</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="headerProfile" href="myaccount.html">
+        <img
+          src="images/profile_image.jpg"
+          style="width: 90px; height: 90px; object-fit: cover"
+          href="myaccount.html"
+        />
+      </div>
+    </div>
+
+    <div class="item_image_in_create_post">
+      <img
+        class="item_image_in_cp"
+        src="images/Books.webp"
+        width="509px"
+        height="490px"
+      />
+    </div>
+
+    <div class="item_descriptions">
+      <textarea
+        id="item_title"
+        class="item_title_cp"
+        placeholder="Item Name"
+      ></textarea>
+      <div class="item_subtitle"><h3>Giving Away:</h3></div>
+      <textarea
+        id="item_descrip"
+        class="item_desc"
+        placeholder="What are you giving away?"
+      ></textarea>
+      <div class="collection_heading">
+        <h3>Collection Time And Location</h3>
+      </div>
+      <input
+        type="text"
+        id="Time"
+        name="Time"
+        placeholder="Time To Collect"
+        class="time_location_text_box"
+      />
+      <input
+        type="text"
+        id="Location"
+        name="Location"
+        placeholder="Where To Collect"
+        class="time_location_text_box"
+      />
+    </div>
+    <div class="cancel_button" onclick="redirectToHome()">
+      <div class="button_text">cancel</div>
+    </div>
+    <div id="Post_Button" class="post_button" onclick="checkAndRedirect()">
+      <div class="button_text">post</div>
+    </div>
+
+    <div class="popup" id="postPopup">
+      <div class="popup-content">
+        <span class="close" onclick="redirectToHome()">&times;</span>
+        <p>Your post has been submitted successfully!</p>
+      </div>
+    </div>
+
+    <div class="popup" id="warningPopup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <p>Please enter a description.</p>
+      </div>
+    </div>
+  </body>
+
+  <script src="../backend/create_post.js"></script>
+</html>
